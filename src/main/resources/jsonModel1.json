@@ -680,15 +680,15 @@
     "mrid" : "165a49a5-1f4e-4173-8ba1-69ba45471707"
   } ],
   "loadResponseCharacteristics" : [ {
+    "qconstantPower" : 2.0,
     "mrid" : "8ce25b1d-045a-438a-a6b7-641023339471",
     "qvoltageExponent" : 2.0,
-    "pvoltageExponent" : 2.0,
-    "qconstantPower" : 2.0
+    "pvoltageExponent" : 2.0
   }, {
+    "qconstantPower" : 2.0,
     "mrid" : "410fce34-0166-4e6f-8186-cc11ef521791",
     "qvoltageExponent" : 2.0,
-    "pvoltageExponent" : 2.0,
-    "qconstantPower" : 2.0
+    "pvoltageExponent" : 2.0
   } ],
   "energyConsumers" : [ {
     "name" : "L1",
@@ -716,10 +716,10 @@
       "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
     },
     "loadResponseCharacteristic" : {
+      "qconstantPower" : 2.0,
       "mrid" : "8ce25b1d-045a-438a-a6b7-641023339471",
       "qvoltageExponent" : 2.0,
-      "pvoltageExponent" : 2.0,
-      "qconstantPower" : 2.0
+      "pvoltageExponent" : 2.0
     },
     "mrid" : "456f3b43-6576-4169-986c-16c6e99935f8"
   }, {
@@ -748,10 +748,10 @@
       "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
     },
     "loadResponseCharacteristic" : {
+      "qconstantPower" : 2.0,
       "mrid" : "410fce34-0166-4e6f-8186-cc11ef521791",
       "qvoltageExponent" : 2.0,
-      "pvoltageExponent" : 2.0,
-      "qconstantPower" : 2.0
+      "pvoltageExponent" : 2.0
     },
     "mrid" : "a8cd2fe2-4704-4e32-93e2-070c48a44941"
   } ]
