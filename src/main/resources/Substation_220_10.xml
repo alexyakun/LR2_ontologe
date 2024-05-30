@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:cim="http://iec.ch/TC57/2013/CIM-schema-cim16#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+    <cim:Substation rdf:ID = "_substation_1">
+        <cim:IdentifiedObject.mRID>substation_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>ПС 220/10</cim:IdentifiedObject.name>
+    </cim:Substation>
+
+    <cim:BaseVoltage rdf:ID = "_220">
+        <cim:IdentifiedObject.mRID>220</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>220 кВ</cim:IdentifiedObject.name>
+        <cim:BaseVoltage.nominalVoltage>220</cim:BaseVoltage.nominalVoltage>
+    </cim:BaseVoltage>
+
+    <cim:BaseVoltage rdf:ID = "_10">
+        <cim:IdentifiedObject.mRID>10</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>10 кВ</cim:IdentifiedObject.name>
+        <cim:BaseVoltage.nominalVoltage>10</cim:BaseVoltage.nominalVoltage>
+    </cim:BaseVoltage>
+
+    <cim:VoltageLevel rdf:ID = "_vl_220">
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_220"/>
+        <cim:VoltageLevel.Substation rdf:resource="#_substation_1"/>
+        <cim:IdentifiedObject.mRID>vl_220</cim:IdentifiedObject.mRID>
+    </cim:VoltageLevel>
+
+    <cim:VoltageLevel rdf:ID = "_vl_10">
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_10"/>
+        <cim:VoltageLevel.Substation rdf:resource="#_substation_1"/>
+        <cim:IdentifiedObject.mRID>substation_1_V-10</cim:IdentifiedObject.mRID>
+    </cim:VoltageLevel>
+
+    <cim:PowerTransformer rdf:ID = "_T1">
+        <cim:IdentifiedObject.mRID>T1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>T1</cim:IdentifiedObject.name>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_vl_220"/>
+    </cim:PowerTransformer>
+
+    <cim:PowerTransformer rdf:ID = "_T2">
+        <cim:IdentifiedObject.mRID>T2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>T2</cim:IdentifiedObject.name>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_vl_220"/>
+    </cim:PowerTransformer>
+
+    <cim:EquivalentInjection rdf:ID = "_EqInj_1">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:IdentifiedObject.mRID>EqInj_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>Генерация в узле 1</cim:IdentifiedObject.name>
+        <cim:EquivalentInjection.maxQ>200</cim:EquivalentInjection.maxQ>
+        <cim:EquivalentInjection.minQ>-200</cim:EquivalentInjection.minQ>
+        <cim:EquivalentInjection.p>-0.10174635</cim:EquivalentInjection.p>
+        <cim:EquivalentInjection.q>1.7182639</cim:EquivalentInjection.q>
+        <cim:EquivalentInjection.r>1.0E-4</cim:EquivalentInjection.r>
+        <cim:EquivalentInjection.r0>1.0E-4</cim:EquivalentInjection.r0>
+        <cim:EquivalentInjection.r2>1.0E-4</cim:EquivalentInjection.r2>
+        <cim:EquivalentInjection.x>6.0</cim:EquivalentInjection.x>
+        <cim:EquivalentInjection.x0>15.0</cim:EquivalentInjection.x0>
+        <cim:EquivalentInjection.x2>8.0</cim:EquivalentInjection.x2>
+    </cim:EquivalentInjection>
+
+    <cim:EquivalentInjection rdf:ID = "_EqInj_2">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:IdentifiedObject.mRID>EqInj_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>Генерация в узле 2</cim:IdentifiedObject.name>
+        <cim:EquivalentInjection.p>0.7</cim:EquivalentInjection.p>
+        <cim:EquivalentInjection.q>-0.3</cim:EquivalentInjection.q>
+        <cim:EquivalentInjection.r>1.0E-4</cim:EquivalentInjection.r>
+        <cim:EquivalentInjection.r0>1.0E-4</cim:EquivalentInjection.r0>
+        <cim:EquivalentInjection.r2>1.0E-4</cim:EquivalentInjection.r2>
+        <cim:EquivalentInjection.x>5.0</cim:EquivalentInjection.x>
+        <cim:EquivalentInjection.x0>12.0</cim:EquivalentInjection.x0>
+        <cim:EquivalentInjection.x2>7.0</cim:EquivalentInjection.x2>
+    </cim:EquivalentInjection>
+
+    <cim:PowerTransformerEnd rdf:ID = "_PTE_T1_HV">
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_220"/>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T1"/>
+        <cim:TransformerEnd.endNumber>0</cim:TransformerEnd.endNumber>
+        <cim:IdentifiedObject.mRID>PTE_T1_HV</cim:IdentifiedObject.mRID>
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindingConnection.Y"/>
+        <cim:PowerTransformerEnd.ratedU>220</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.ratedS>123.45</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.b>13.02</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.b0>13.02</cim:PowerTransformerEnd.b0>
+        <cim:PowerTransformerEnd.r>1.5</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.r0>1.5</cim:PowerTransformerEnd.r0>
+        <cim:PowerTransformerEnd.x>1.0E-4</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x0>1.0E-4</cim:PowerTransformerEnd.x0>
+    </cim:PowerTransformerEnd>
+    
+    <cim:PowerTransformerEnd rdf:ID = "_PTE_T1_LV">
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_10"/>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T1"/>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:IdentifiedObject.mRID>PTE_T1_LV</cim:IdentifiedObject.mRID>
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindingConnection.D"/>
+        <cim:PowerTransformerEnd.ratedU>10</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.b>13.02</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.b0>13.02</cim:PowerTransformerEnd.b0>
+        <cim:PowerTransformerEnd.r>1.5</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.r0>1.5</cim:PowerTransformerEnd.r0>
+        <cim:PowerTransformerEnd.x>56.9</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x0>56.9</cim:PowerTransformerEnd.x0>
+    </cim:PowerTransformerEnd>
+
+    <cim:PowerTransformerEnd rdf:ID = "_PTE_T2_HV">
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_220"/>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T2"/>
+        <cim:TransformerEnd.endNumber>0</cim:TransformerEnd.endNumber>
+        <cim:IdentifiedObject.mRID>PTE_T2_HV</cim:IdentifiedObject.mRID>
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindingConnection.Y"/>
+        <cim:PowerTransformerEnd.ratedU>220</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.ratedS>123.45</cim:PowerTransformerEnd.ratedS>
+        <cim:PowerTransformerEnd.b>13.02</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.b0>13.02</cim:PowerTransformerEnd.b0>
+        <cim:PowerTransformerEnd.r>1.5</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.r0>1.5</cim:PowerTransformerEnd.r0>
+        <cim:PowerTransformerEnd.x>1.0E-4</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x0>1.0E-4</cim:PowerTransformerEnd.x0>
+    </cim:PowerTransformerEnd>
+
+    <cim:PowerTransformerEnd rdf:ID = "_PTE_T2_LV">
+        <cim:TransformerEnd.BaseVoltage rdf:resource="#_10"/>
+        <cim:PowerTransformerEnd.PowerTransformer rdf:resource="#_T2"/>
+        <cim:TransformerEnd.endNumber>1</cim:TransformerEnd.endNumber>
+        <cim:IdentifiedObject.mRID>PTE_T2_LV</cim:IdentifiedObject.mRID>
+        <cim:PowerTransformerEnd.connectionKind rdf:resource="http://iec.ch/TC57/2013/CIM-schema-cim16#WindingConnection.D"/>
+        <cim:PowerTransformerEnd.ratedU>10</cim:PowerTransformerEnd.ratedU>
+        <cim:PowerTransformerEnd.b>13.02</cim:PowerTransformerEnd.b>
+        <cim:PowerTransformerEnd.b0>13.02</cim:PowerTransformerEnd.b0>
+        <cim:PowerTransformerEnd.r>1.5</cim:PowerTransformerEnd.r>
+        <cim:PowerTransformerEnd.r0>1.5</cim:PowerTransformerEnd.r0>
+        <cim:PowerTransformerEnd.x>56.9</cim:PowerTransformerEnd.x>
+        <cim:PowerTransformerEnd.x0>56.9</cim:PowerTransformerEnd.x0>
+    </cim:PowerTransformerEnd>
+
+    <cim:ACLineSegment rdf:ID = "_Line_1">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:Conductor.length>1.0</cim:Conductor.length>
+        <cim:IdentifiedObject.mRID>Line_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>ЛЭП-1</cim:IdentifiedObject.name>
+        <cim:ACLineSegment.b0ch>12.0</cim:ACLineSegment.b0ch>
+        <cim:ACLineSegment.bch>4.0</cim:ACLineSegment.bch>
+        <cim:ACLineSegment.r>5.0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.r0>15.0</cim:ACLineSegment.r0>
+        <cim:ACLineSegment.x>7.0</cim:ACLineSegment.x>
+        <cim:ACLineSegment.x0>21.0</cim:ACLineSegment.x0>
+    </cim:ACLineSegment>
+
+    <cim:ACLineSegment rdf:ID = "_Line_2">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_220"/>
+        <cim:Conductor.length>1.0</cim:Conductor.length>
+        <cim:IdentifiedObject.mRID>Line_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>ЛЭП-2</cim:IdentifiedObject.name>
+        <cim:ACLineSegment.b0ch>12.0</cim:ACLineSegment.b0ch>
+        <cim:ACLineSegment.bch>4.0</cim:ACLineSegment.bch>
+        <cim:ACLineSegment.r>5.0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.r0>15.0</cim:ACLineSegment.r0>
+        <cim:ACLineSegment.x>7.0</cim:ACLineSegment.x>
+        <cim:ACLineSegment.x0>21.0</cim:ACLineSegment.x0>
+    </cim:ACLineSegment>
+
+    <cim:ACLineSegment rdf:ID = "_Line_3">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_10"/>
+        <cim:Conductor.length>1.0</cim:Conductor.length>
+        <cim:IdentifiedObject.mRID>Line_3</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>ЛЭП-3</cim:IdentifiedObject.name>
+        <cim:ACLineSegment.b0ch>3.0</cim:ACLineSegment.b0ch>
+        <cim:ACLineSegment.bch>1.0</cim:ACLineSegment.bch>
+        <cim:ACLineSegment.r>2.0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.r0>6.0</cim:ACLineSegment.r0>
+        <cim:ACLineSegment.x>3.0</cim:ACLineSegment.x>
+        <cim:ACLineSegment.x0>9.0</cim:ACLineSegment.x0>
+    </cim:ACLineSegment>
+
+    <cim:ACLineSegment rdf:ID = "_Line_4">
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_10"/>
+        <cim:Conductor.length>1.0</cim:Conductor.length>
+        <cim:IdentifiedObject.mRID>Line_4</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>ЛЭП-4</cim:IdentifiedObject.name>
+        <cim:ACLineSegment.b0ch>3.0</cim:ACLineSegment.b0ch>
+        <cim:ACLineSegment.bch>1.0</cim:ACLineSegment.bch>
+        <cim:ACLineSegment.r>2.0</cim:ACLineSegment.r>
+        <cim:ACLineSegment.r0>6.0</cim:ACLineSegment.r0>
+        <cim:ACLineSegment.x>3.0</cim:ACLineSegment.x>
+        <cim:ACLineSegment.x0>9.0</cim:ACLineSegment.x0>
+    </cim:ACLineSegment>
+
+    <cim:ConformLoad rdf:ID = "_CLoad_1">
+        <cim:IdentifiedObject.mRID>CLoad_1</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>Нагрузка</cim:IdentifiedObject.name>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_10"/>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_vl_10"/>
+        <cim:EnergyConsumer.pfixed>0.2</cim:EnergyConsumer.pfixed>
+        <cim:EnergyConsumer.qfixed>0.1</cim:EnergyConsumer.qfixed>
+    </cim:ConformLoad>
+
+    <cim:ConformLoad rdf:ID = "_CLoad_2">
+        <cim:IdentifiedObject.mRID>CLoad_2</cim:IdentifiedObject.mRID>
+        <cim:IdentifiedObject.name>Нагрузка</cim:IdentifiedObject.name>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_10"/>
+        <cim:Equipment.EquipmentContainer rdf:resource="#_vl_10"/>
+        <cim:EnergyConsumer.pfixed>0.2</cim:EnergyConsumer.pfixed>
+        <cim:EnergyConsumer.qfixed>0.1</cim:EnergyConsumer.qfixed>
+    </cim:ConformLoad>
+</rdf:RDF>

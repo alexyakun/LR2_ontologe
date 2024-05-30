@@ -1,0 +1,758 @@
+{
+  "substations" : [ {
+    "name" : "Substation 1",
+    "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+  } ],
+  "lines" : [ {
+    "name" : "Transmission Line 1",
+    "mrid" : "d55146be-1f7e-4113-94a2-08eed9e3bdf7"
+  }, {
+    "name" : "Transmission Line 2",
+    "mrid" : "99ca703f-7615-45aa-afaf-fb95c4e4b327"
+  } ],
+  "baseVoltages" : [ {
+    "name" : "110кВ",
+    "nominalVoltage" : 110.0,
+    "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+  }, {
+    "name" : "10кВ",
+    "nominalVoltage" : 10.0,
+    "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+  } ],
+  "baseFrequency" : [ {
+    "frequency" : 50.0,
+    "mrid" : "44828d3c-9052-4599-b79d-bbe0ecb86d06"
+  } ],
+  "voltageLevels" : [ {
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "substation" : {
+      "name" : "Substation 1",
+      "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+    },
+    "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+  }, {
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "substation" : {
+      "name" : "Substation 1",
+      "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+    },
+    "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+  } ],
+  "powerTransformers" : [ {
+    "name" : "T1",
+    "magBaseU" : 1.17,
+    "bmagSat" : 0.2,
+    "magSatFlux" : 125.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "equipmentContainer" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "57e1558e-8af4-40b0-8295-2c81cebf7bdd",
+    "partOfGeneratorUnit" : false
+  }, {
+    "name" : "T1clone",
+    "magBaseU" : 1.17,
+    "bmagSat" : 0.2,
+    "magSatFlux" : 125.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "equipmentContainer" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "52e807b0-8bf4-4c9a-8e1d-c640002b220c",
+    "partOfGeneratorUnit" : false
+  } ],
+  "equivalentInjections" : [ {
+    "name" : "E1",
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "equipmentContainer" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "r" : 0.26167978121471985,
+    "r2" : 0.26167978121471985,
+    "x" : 4.993147673772869,
+    "x2" : 4.993147673772869,
+    "r0" : 0.26167978121471985,
+    "x0" : 4.993147673772869,
+    "mrid" : "d214150d-78c5-4c1a-bc3e-4aff5545013d"
+  }, {
+    "name" : "E2",
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "equipmentContainer" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "r" : 0.26167978121471985,
+    "r2" : 0.26167978121471985,
+    "x" : 4.993147673772869,
+    "x2" : 4.993147673772869,
+    "r0" : 0.26167978121471985,
+    "x0" : 4.993147673772869,
+    "mrid" : "f8ae4fba-c20d-43ea-bb07-899f30780665"
+  } ],
+  "powerTransformerEnds" : [ {
+    "name" : "First winding of T1",
+    "endNumber" : 1,
+    "phaseAndClock" : 0,
+    "grounded" : true,
+    "ratedU" : 115.0,
+    "ratedS" : 16.0,
+    "g" : 1.4366729678638942E-6,
+    "b" : 8.468809073724007E-6,
+    "doesSaturationExist" : false,
+    "x" : 86.7890625,
+    "r" : 4.39111328125,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "powerTransformer" : {
+      "name" : "T1",
+      "magBaseU" : 1.17,
+      "bmagSat" : 0.2,
+      "magSatFlux" : 125.0,
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "equipmentContainer" : {
+        "baseVoltage" : {
+          "name" : "110кВ",
+          "nominalVoltage" : 110.0,
+          "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+        },
+        "substation" : {
+          "name" : "Substation 1",
+          "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+        },
+        "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+      },
+      "mrid" : "57e1558e-8af4-40b0-8295-2c81cebf7bdd",
+      "partOfGeneratorUnit" : false
+    },
+    "connectionKind" : {
+      "value" : "http://iec.ch/TC57/2016/CIM-schema-cim#WindingConnection.Y"
+    },
+    "mrid" : "fea03cc1-fb33-4af3-97b7-3a8d69c36379"
+  }, {
+    "name" : "Second winding of T1",
+    "endNumber" : 2,
+    "phaseAndClock" : 11,
+    "grounded" : false,
+    "ratedU" : 11.0,
+    "ratedS" : 16.0,
+    "g" : 1.5702479338842976E-4,
+    "b" : 9.256198347107438E-4,
+    "doesSaturationExist" : false,
+    "x" : 0.7940625,
+    "r" : 0.04017578125,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "powerTransformer" : {
+      "name" : "T1",
+      "magBaseU" : 1.17,
+      "bmagSat" : 0.2,
+      "magSatFlux" : 125.0,
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "equipmentContainer" : {
+        "baseVoltage" : {
+          "name" : "110кВ",
+          "nominalVoltage" : 110.0,
+          "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+        },
+        "substation" : {
+          "name" : "Substation 1",
+          "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+        },
+        "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+      },
+      "mrid" : "57e1558e-8af4-40b0-8295-2c81cebf7bdd",
+      "partOfGeneratorUnit" : false
+    },
+    "connectionKind" : {
+      "value" : "http://iec.ch/TC57/2016/CIM-schema-cim#WindingConnection.D"
+    },
+    "mrid" : "401fd43d-6230-4dca-8318-9464abf13586"
+  }, {
+    "name" : "First winding of T1clone",
+    "endNumber" : 1,
+    "phaseAndClock" : 0,
+    "grounded" : true,
+    "ratedU" : 115.0,
+    "ratedS" : 16.0,
+    "g" : 1.4366729678638942E-6,
+    "b" : 8.468809073724007E-6,
+    "doesSaturationExist" : false,
+    "x" : 86.7890625,
+    "r" : 4.39111328125,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "powerTransformer" : {
+      "name" : "T1clone",
+      "magBaseU" : 1.17,
+      "bmagSat" : 0.2,
+      "magSatFlux" : 125.0,
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "equipmentContainer" : {
+        "baseVoltage" : {
+          "name" : "110кВ",
+          "nominalVoltage" : 110.0,
+          "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+        },
+        "substation" : {
+          "name" : "Substation 1",
+          "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+        },
+        "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+      },
+      "mrid" : "52e807b0-8bf4-4c9a-8e1d-c640002b220c",
+      "partOfGeneratorUnit" : false
+    },
+    "connectionKind" : {
+      "value" : "http://iec.ch/TC57/2016/CIM-schema-cim#WindingConnection.Y"
+    },
+    "mrid" : "8039574e-a68f-499e-84e5-f439484237a8"
+  }, {
+    "name" : "Second winding of T1clone",
+    "endNumber" : 2,
+    "phaseAndClock" : 11,
+    "grounded" : false,
+    "ratedU" : 11.0,
+    "ratedS" : 16.0,
+    "g" : 1.5702479338842976E-4,
+    "b" : 9.256198347107438E-4,
+    "doesSaturationExist" : false,
+    "x" : 0.7940625,
+    "r" : 0.04017578125,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "powerTransformer" : {
+      "name" : "T1clone",
+      "magBaseU" : 1.17,
+      "bmagSat" : 0.2,
+      "magSatFlux" : 125.0,
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "equipmentContainer" : {
+        "baseVoltage" : {
+          "name" : "110кВ",
+          "nominalVoltage" : 110.0,
+          "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+        },
+        "substation" : {
+          "name" : "Substation 1",
+          "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+        },
+        "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+      },
+      "mrid" : "52e807b0-8bf4-4c9a-8e1d-c640002b220c",
+      "partOfGeneratorUnit" : false
+    },
+    "connectionKind" : {
+      "value" : "http://iec.ch/TC57/2016/CIM-schema-cim#WindingConnection.D"
+    },
+    "mrid" : "97e72856-efe0-40ed-96ea-abf2b49cdda2"
+  } ],
+  "acLineSegments" : [ {
+    "name" : "Line1",
+    "length" : 40.0,
+    "r" : 4.640000000000001,
+    "r0" : 46.4,
+    "x" : 16.0,
+    "x0" : 48.0,
+    "b0ch" : 108.0,
+    "bch" : 90.0,
+    "ratedActivePower" : 100.0,
+    "userConcentratedParameters" : false,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "line" : {
+      "name" : "Transmission Line 1",
+      "mrid" : "d55146be-1f7e-4113-94a2-08eed9e3bdf7"
+    },
+    "mrid" : "90f315fa-688b-4b79-9997-2a17251af71f"
+  }, {
+    "name" : "Line2",
+    "length" : 40.0,
+    "r" : 4.640000000000001,
+    "r0" : 46.4,
+    "x" : 16.0,
+    "x0" : 48.0,
+    "b0ch" : 108.0,
+    "bch" : 90.0,
+    "ratedActivePower" : 100.0,
+    "userConcentratedParameters" : false,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "line" : {
+      "name" : "Transmission Line 2",
+      "mrid" : "99ca703f-7615-45aa-afaf-fb95c4e4b327"
+    },
+    "mrid" : "aa0701d7-dd51-4ebd-99b8-83d85d78a8ef"
+  } ],
+  "conformLoads" : [ ],
+  "breakers" : [ {
+    "name" : "Q1",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "7c5e9319-8816-488f-a632-2e9b78e0c9da"
+  }, {
+    "name" : "Q2",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "97a816c3-293b-4b47-9977-3a2908e85731"
+  }, {
+    "name" : "QS1",
+    "open" : true,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "824916bf-0d81-4773-8fc8-ac01c6a4be8e"
+  }, {
+    "name" : "Q5",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "89a61c9e-9750-4ada-b4f6-399fdbab6391"
+  }, {
+    "name" : "Q6",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "7c3005c8-ed08-47e0-bbcc-8eb933dd719f"
+  }, {
+    "name" : "Q3",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "745fe861-3a8c-4d00-8f15-8c6d7474bdf2"
+  }, {
+    "name" : "Q4",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "4e822b92-09f8-4c06-8b4b-f500c16804fc"
+  }, {
+    "name" : "QS2",
+    "open" : true,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "2347dcfc-8989-40cc-a77c-18311074387b"
+  }, {
+    "name" : "Q7",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "845f803a-6f15-4f84-a016-0880401e1762"
+  }, {
+    "name" : "Q8",
+    "open" : false,
+    "ratedCurrent" : 100.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "1ee8d50a-ba5a-4f26-93da-47afa5855fcc"
+  } ],
+  "busbarSections" : [ {
+    "name" : "BUS1",
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "3a450446-b829-4727-b4d8-aa4002ae07c3"
+  }, {
+    "name" : "BUS3",
+    "baseVoltage" : {
+      "name" : "110кВ",
+      "nominalVoltage" : 110.0,
+      "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "110кВ",
+        "nominalVoltage" : 110.0,
+        "mrid" : "e6240428-fe41-4cb9-80d2-52bd2bbe2c03"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "7e3860fe-15e8-4d3a-bdeb-01321c768bf7"
+    },
+    "mrid" : "ec100d29-212b-4269-a835-780e2f8420e3"
+  }, {
+    "name" : "BUS2",
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "5dc6dcbe-17df-4a9c-9f37-972c2df36d29"
+  }, {
+    "name" : "BUS4",
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "mrid" : "165a49a5-1f4e-4173-8ba1-69ba45471707"
+  } ],
+  "loadResponseCharacteristics" : [ {
+    "mrid" : "8ce25b1d-045a-438a-a6b7-641023339471",
+    "qvoltageExponent" : 2.0,
+    "pvoltageExponent" : 2.0,
+    "qconstantPower" : 2.0
+  }, {
+    "mrid" : "410fce34-0166-4e6f-8186-cc11ef521791",
+    "qvoltageExponent" : 2.0,
+    "pvoltageExponent" : 2.0,
+    "qconstantPower" : 2.0
+  } ],
+  "energyConsumers" : [ {
+    "name" : "L1",
+    "grounded" : false,
+    "pfixed" : 13.92,
+    "p" : 13.92,
+    "qfixed" : 7.89,
+    "q" : 7.89,
+    "ratedVoltage" : 10.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "loadResponseCharacteristic" : {
+      "mrid" : "8ce25b1d-045a-438a-a6b7-641023339471",
+      "qvoltageExponent" : 2.0,
+      "pvoltageExponent" : 2.0,
+      "qconstantPower" : 2.0
+    },
+    "mrid" : "456f3b43-6576-4169-986c-16c6e99935f8"
+  }, {
+    "name" : "L2",
+    "grounded" : false,
+    "pfixed" : 13.92,
+    "p" : 13.92,
+    "qfixed" : 7.89,
+    "q" : 7.89,
+    "ratedVoltage" : 10.0,
+    "baseVoltage" : {
+      "name" : "10кВ",
+      "nominalVoltage" : 10.0,
+      "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+    },
+    "voltageLevel" : {
+      "baseVoltage" : {
+        "name" : "10кВ",
+        "nominalVoltage" : 10.0,
+        "mrid" : "9fd0eedd-2fbb-4160-86ba-5d577108df8d"
+      },
+      "substation" : {
+        "name" : "Substation 1",
+        "mrid" : "c4b66487-d98a-4d8a-87f4-142124b18e14"
+      },
+      "mrid" : "e0a21a60-5d62-48f5-8b8e-4d3a6fb9795b"
+    },
+    "loadResponseCharacteristic" : {
+      "mrid" : "410fce34-0166-4e6f-8186-cc11ef521791",
+      "qvoltageExponent" : 2.0,
+      "pvoltageExponent" : 2.0,
+      "qconstantPower" : 2.0
+    },
+    "mrid" : "a8cd2fe2-4704-4e32-93e2-070c48a44941"
+  } ]
+}
